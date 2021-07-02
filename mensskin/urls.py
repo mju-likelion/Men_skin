@@ -1,6 +1,8 @@
 
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 import cosmetic.views
 
 urlpatterns = [
@@ -13,3 +15,4 @@ urlpatterns = [
     path('mens_rankingdetail2/',cosmetic.views.mens_rankingdetail2, name="mens_rankingdetail2"),
     path('search_result/',cosmetic.views.search_result, name="search_result"),
 ]
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
