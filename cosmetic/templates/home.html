@@ -1,1 +1,178 @@
-<h1>안녕! 이건 테스트</h1>
+{% load static %}
+
+<!DOCTYPE html>
+
+<head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(function () {
+                $('#homeup').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+                var scrollHeight = $(document).height();
+                $('#homedown').click(function () {
+                    $('body,html').animate({
+                        scrollTop: scrollHeight
+                    }, 800);
+                    return false;
+                });
+            });
+
+        });
+    </script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        div.qucik_menu {
+            position: absolute;
+            top: 80px;
+            left: 1680px;
+            width: 132px;
+            height: 700px;
+            background-color: rgb(56, 56, 56, 0.6);
+            margin: 10px;
+            padding: 30px;
+            border-radius: 90px / 90px;
+            color: white;
+            font-size: 1.5em;
+            font-family: Georgia;
+        }
+
+        div.qucik_menu_1 {
+            position: absolute;
+            top: 180px;
+            left: 1695px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(50, 49, 49);
+            margin: 10px;
+            padding: 30px;
+            border-radius: 90px / 90px;
+            color: white;
+            font-size: 1.5em;
+            font-family: Georgia;
+            text-align: center;
+        }
+
+        div.qucik_menu_1 {
+            position: absolute;
+            top: 180px;
+            left: 1695px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(50, 49, 49);
+            margin: 10px;
+            padding: 30px;
+            border-radius: 90px / 90px;
+            color: white;
+            font-size: 1.5em;
+            font-family: Georgia;
+            text-align: center;
+        }
+
+        div.qucik_menu_2 {
+            position: absolute;
+            top: 380px;
+            left: 1695px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(50, 49, 49);
+            margin: 10px;
+            padding: 30px;
+            border-radius: 90px / 90px;
+            color: white;
+            font-size: 1.5em;
+            font-family: Georgia;
+            text-align: center;
+        }
+
+        div.qucik_menu_3 {
+            position: absolute;
+            top: 580px;
+            left: 1695px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(106, 105, 105);
+            margin: 10px;
+            padding: 30px;
+            border-radius: 90px / 90px;
+            color: white;
+            font-size: 1.5em;
+            font-family: Georgia;
+            text-align: center;
+        }
+
+        .menu_img:hover {
+            
+            transform: scale(1.2);
+            transition: transform.500s;
+        }
+    </style>
+    <title>main_home</title>
+</head>
+
+<body bgcolor="#A3A3A3">
+    <span>
+        <img src="{% static 'logo.png'%}" alt="로고" width="205" height="198" />
+    </span>
+    <div>
+        <img src="{% static 'main_image.jpg'%}" style="float: right; position: absolute;" alt="메인이미지" height="615px"  />
+
+        <div class="qucik_menu"> Quick Menu</div>
+        <div class="qucik_menu_1" onclick="location.href={%url 'find_foundation'%};">Find your foundation</div>
+        <div class="qucik_menu_2" onclick="location.href='랭크~.html';">cosmetics rank</div>
+        <div class="qucik_menu_3" onclick="location.href='게시판~.html';">notic board</div>
+    </div>
+
+    <div>
+        <a href="#homedown" id="homedown"><img src="{% static 'mouse.png'%}"
+                style="padding-top: 635px; padding-bottom: 20px; margin-left: 900px; margin-right: auto; display: block; position: absolute;"
+                width="73" alt="mouse" href="#target1" class="scroll" /></a>
+
+
+
+
+    </div>
+
+
+
+    <div>
+        <div id="target1"></div>
+        <img class="menu_img" src="{% static 'foundation_dark.jpg'%}"
+            style="position: absolute; margin-right: 68px; margin-left: 154px; margin-top: 800px;  padding-bottom: 101px;"
+            alt="메인이미지" height="752" width="448" onmouseover="this.src={% static 'foundation.jpg'% };"
+            onmouseout="this.src={% static 'foundation.jpg'%}" onclick="location.href={%url 'find_foundation'%};">
+
+        <img class="menu_img" src="{% static 'rank_dark.png'%}"
+            style="position: absolute; margin-right: 68px; margin-left: 716px; margin-top: 800px;  margin-bottom: 101px"
+            alt="메인이미지" height="752" width="448" onmouseover="this.src={% static 'rank.png'%}" onmouseout="this.src={% static 'rank.png'%}"
+            onclick="location.href='랭크~.html';">
+
+        <img class="menu_img" src="{% static 'board_dark.png'%}"
+            style="position: absolute; margin-right: 154px; margin-left: 1278px; margin-top: 800px;  padding-bottom: 101px"
+            alt="메인이미지" height="752" width="448" onmouseover="this.src={% static 'board.png'%}"
+            onmouseout="this.src={% static 'board_dark.png'%}" onclick="location.href='게시판~.html';">
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

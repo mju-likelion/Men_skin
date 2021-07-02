@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #image_container {
+      width: 595px;
+      height: 504px;
+      margin-top: 18px;
+      margin-left: 158px;
+      background-image: url("{% static 'upload_image.png'%}");
+      border: 10px dashed white;
+
+    }
+
+    #Big_line {
+      position: absolute;
+      top: 149px;
+      left: 940px;
+      height: 600px;
+
+
+    }
+
+    #upload_button {
+      font-family: Georgia;
+      text-align: center;
+      font-size: 20pt;
+      background-color: rgb(255, 252, 229);
+      width: 600px;
+      
+      margin-top: 30px;
+      font-size:0; 
+      position:absolute; 
+      height: 90px;
+      margin-left: 160px;
+      border-radius: 90px / 90px;
+      border: 10px white;
+      -webkit-appearance: none;
+      
+
+    }
+    
+
+    #text {
+      position: absolute;
+      top: 183px;
+      left: 1126px;
+      color: white;
+      font-size: 1.5em;
+      font-family: Georgia;
+      text-align: center;
+    }
+
+    div.tone_page {
+      position: absolute;
+      width: 261px;
+      height: 281px;
+      background-color: white;
+      text-align: center;
+      font-family: Georgia;
+    }
+    div.tone_page:active{
+      background-color: rgb(255, 252, 229);
+    }
+
+    #upload_button input[type="file"] { 
+      /* 파일 필드 숨기기 */ 
+      position: absolute; 
+      width: 1px; height: 1px; padding: 0; margin: -1px; 
+      overflow: hidden; clip:rect(0,0,0,0); border: 0; 
+      -webkit-appearance: none;
+      }
+
+
+  </style>
+
+  <script>
+    function setThumbnail(event) {
+      var reader = new FileReader();
+      reader.onload = function (event) {
+        var img = document.createElement("img");
+        img.setAttribute("src", event.target.result);
+        document.querySelector("div#image_container").appendChild(img);
+
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+    var button_check = 0;
+    var result_check = 0;
+    //1은 밝은 피부 2는 어두운 피부 
+
+    function change_brightpart(){
+      button_check = 1;
+    }
+    function dump_darkestpart(){
+      button_check = 2;
+    }
+    function change(){
+      if(button_check==1){
+        var dump_brightpart = document.getElementById("dump_brightpart");
+        dump_brightpart.src="{% static '밝은피부.png'%}";
+        result_check += 1;
+        
+      }
+      else if(button_check==2){
+        var dump_darkestpart = document.getElementById("dump_darkestpart");
+        dump_darkestpart.src="{% static '어두운피부.png'%}" ;
+        result_check += 1;
+      }
+      if(result_check==2){
+         var dump_result = document.getElementById("dump_result");
+         dump_result.src="{% static 'result_button.png'%}";
+
+      }
+    }
+  </script>
+
+  <title>find_foundation</title>
+</head>
+
+<body bgcolor="#A3A3A3">
+  <span>
+    <img src="{% static 'logo.png'%}" alt="로고" width="205" height="198" onclick="location.href='{%url 'home'%}';"/>
+  </span>
+  <div id="image_container" onclick="change()">
+
+
+  </div>
+
+  <input id="upload_button" type="file" accept="image/*" onchange="setThumbnail(event);" />
+  <img src="{% static 'upload_image (3).png'%}"  style="position: absolute; margin-left: 360px; margin-top: 50px;">
+  <img id="Big_line" src= "{% static 'Big_line.png'%}" >
+
+  </div>
+  <img id="text" src="{% static 'text.png'%}">
+  <div class="tone_page" id="bright"  style="top: 431px; left: 1126px;" onclick="change_brightpart()">bright part</div>
+  <img id="dump_brightpart" src="{% static 'dump.png'%}" style="top: 431px; left: 1126px; position: absolute;">
+  <div class="tone_page" id="darkest" style="top: 431px; left: 1463px;"onclick="dump_darkestpart()">darkest part</div>
+  <img id="dump_darkestpart" src="{% static 'dump2.png'%}" style="top: 431px; left: 1463px; position: absolute;">
+  <img id="dump_result" src="{% static 'dump_result.png'%}" onclick="location.href='{%url 'foundation_result'%}';" style="left: 1124px; margin-top: 22px; position: absolute; " >
+</body>
+
+</html>
