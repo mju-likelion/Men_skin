@@ -1,0 +1,164 @@
+.title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.ranking {
+  z-index:1;
+  width: 1742.8px;
+  height: 310px;
+  flex-grow: 0;
+  padding: 0 19.5px 0 0;
+  background-color: #c4c4c4;
+  margin : 0 auto;
+  margin-bottom : 40px;
+} 
+
+.logo {
+  width: 90.5px;
+  height: 97px;
+  margin: 0 277.5px 15px 0;
+}
+
+.search_bar {
+  width: 332px;
+  height: 39.5px;
+  margin: 500px 500px 500px 500px;
+  padding: 1px 27px 8px 25.5px;
+  border-radius: 46px;
+  background-color: #fffce5;	
+} 
+
+.glass {
+  width: 16.5px;
+  height: 23px;
+  margin: 8.5px 6px 0 0;
+}
+
+.bg {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  opacity: 0.7;
+  border-radius: 2px;
+  background-color: #000000;
+}
+.star {
+  width: 11px;
+  height: 10px;
+}
+
+.toner_sector{
+	display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 33.333333333333336%;
+    padding: 0 5px;
+    margin: 0 0 24px;
+}
+
+.product_sector{
+	position: relative;
+    width: 210;
+    height: 310;
+    padding-bottom: 145.37037037037038%;
+}
+.toner_skin1 {
+  position:relative;
+  width: 103.5px;
+  height: 121.5px;
+  margin: 1px 21.5px 4px 0;
+  padding: 4px 84px 102.5px 4.5px;
+}
+
+.toner_skin2 {
+  position:relative;
+  width: 103.5px;
+  height: 121.5px;
+  margin: 2px 22px 3px 21.5px;
+  padding: 3px 83.5px 103.5px 5px;
+} 
+
+.toner_skin3 {
+  position:relative;
+  width: 103.5px;
+  height: 121.5px;
+  margin: 2px 20px 3px 22px;
+  padding: 3px 83.5px 103.5px 5px;
+}
+
+.toner_skin4 {
+  position:relative;
+  width: 103.5px;
+  height: 121.5px;
+  margin: 2px 19px 3px 20px;
+  padding: 3px 82.5px 103.5px 6px;
+} 
+
+.toner_skin5 {
+  position:relative;
+  width: 103.5px;
+  height: 121.5px;
+  margin: 2px 0 3px 21px;
+  padding: 3px 83px 103.5px 5.5px;
+} 
+
+.myButton {
+	box-shadow: 0px 0px 0px 0px #899599;
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	background-color:#ededed;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Georgia;
+	font-size:1.25rem;
+	font-weight:bold;
+	padding:15px 20px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.green_window {
+    display: inline-block;
+    width: 366px; height: 34px;
+    border: 3px solid #200400;
+    background: white;
+}
+.input_text {
+    width: 250px; height: 40px;
+    margin: 6px 0 0 9px;
+    border: 0;
+    line-height: 21px;
+    font-weight: bold;
+    font-size: 16px;
+    outline: none;
+	margin-left: 20px;
+}
+.sch_smit {
+    width: 54px; height: 40px;
+    margin: 0; border: 0;
+    vertical-align: top;
+    background: #200400;
+    color: white;
+    font-weight: bold;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.sch_smit:hover {
+    background: #A3A3A3;
+}
+
+.rank_number {
+    width: 20px; height: 20px;
+    background: #000000;
+    color: white;
+    border-radius: 4px;
+	position : absolute;
+}

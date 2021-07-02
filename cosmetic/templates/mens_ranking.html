@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>mens_ranking</title>
+        <link href="mens_ranking.css" rel="stylesheet" type="text/css" />
+        <style>
+            html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            #name {
+                font-family: Georgia;
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 65px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                width: 120px;
+            }
+            #product_info {
+                display: inline-block;
+                width: 239px;
+            }
+        </style>
+        <title>Document</title>
+    </head>
+    <body bgcolor="#A3A3A3">
+        <span>
+            <img src="logo.png" alt="로고" width="205" height="198" />
+        </span>
+        <div
+            class="search_bar"
+            style="
+                width: 350px;
+                height: 50px;
+                border-radius: 46px;
+                background-color: #fffce5;
+                float: right;
+                margin-top: 180px;
+                margin-right: 100px;
+            "
+        >
+            <input
+                id="text"
+                type="text"
+                class="input_text"
+                name="search"
+                onkeydown="enterSearch()"
+                style="background-color: #fffce5; margin-top: 5px;"
+            />
+            <input
+                type="button"
+                class="sch_smit"
+                value="검색"
+                style="margin-top: 5px; float: right; margin-right: 20px;"
+                onclick="window.open('https://mens-skin-jfpov.run.goorm.io/mens_skin/search_result.html')"
+            />
+        </div>
+        <p style="font-family: Georgia; font-size: 1.25rem; margin-left: 100px;">#toner</p>
+        <div class="ranking">
+            <div class="product_sector">
+                <img
+                    src="skin1.jpg"
+                    alt="토너 1위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin1"
+                    position="relative"
+                    onclick="window.open('https://mens-skin-jfpov.run.goorm.io/mens_skin/mens_rankingdetail1.html')"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 25px;"
+                >
+                    1
+                </div>
+                <img
+                    src="skin2.jpg"
+                    alt="토너 1위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin2"
+                    position="relative"
+                    onclick="window.open('https://mens-skin-jfpov.run.goorm.io/mens_skin/mens_rankingdetail2.html')"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 270px;"
+                >
+                    2
+                </div>
+                <img
+                    src="skin3.jpg"
+                    alt="토너 3위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin3"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 515px;"
+                >
+                    3
+                </div>
+                <img
+                    src="skin4.jpg"
+                    alt="토너 4위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin4"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 760px;"
+                >
+                    4
+                </div>
+                <img
+                    src="skin5.jpg"
+                    alt="토너 5위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin5"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1005px;"
+                >
+                    5
+                </div>
+                <img
+                    src="skin1.jpg"
+                    alt="토너 6위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin1"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1250px;"
+                >
+                    6
+                </div>
+                <img
+                    src="skin2.jpg"
+                    alt="토너 7위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin2"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1495px;"
+                >
+                    7
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">가 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        22,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.8점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">나 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        25,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.5점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">다 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        18,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.2점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">라 슈퍼토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        16,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.1점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">마 최고토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        23,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.7점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">바 어썸토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        25,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.6점
+                    </p>
+                </div>
+                <div id="product_info" style="margin-right: 30px;">
+                    <p id="name" class="inline-block">사 로제토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        22,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.8점
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p style="font-family: Georgia; font-size: 1.25rem; margin-left: 100px;">#lotion</p>
+        <div class="ranking">
+            <div class="product_sector">
+                <img
+                    src="skin1.jpg"
+                    alt="토너 1위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin1"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 25px;"
+                >
+                    1
+                </div>
+                <img
+                    src="skin2.jpg"
+                    alt="토너 1위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin2"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 270px;"
+                >
+                    2
+                </div>
+                <img
+                    src="skin3.jpg"
+                    alt="토너 3위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin3"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 515px;"
+                >
+                    3
+                </div>
+                <img
+                    src="skin4.jpg"
+                    alt="토너 4위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin4"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 760px;"
+                >
+                    4
+                </div>
+                <img
+                    src="skin5.jpg"
+                    alt="토너 5위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin5"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1005px;"
+                >
+                    5
+                </div>
+                <img
+                    src="skin1.jpg"
+                    alt="토너 6위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin1"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1250px;"
+                >
+                    6
+                </div>
+                <img
+                    src="skin2.jpg"
+                    alt="토너 7위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin2"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1495px;"
+                >
+                    7
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">가 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        22,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.8점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">나 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        25,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.5점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">다 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        18,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.2점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">라 슈퍼토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        16,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.1점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">마 최고토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        23,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.7점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">바 어썸토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        25,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.6점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">사 로제토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        22,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.8점
+                    </p>
+                </div>
+            </div>
+        </div>
+        <p style="font-family: Georgia; font-size: 1.25rem; margin-left: 100px;">#ample</p>
+        <div class="ranking">
+            <div class="product_sector">
+                <img
+                    src="skin1.jpg"
+                    alt="토너 1위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin1"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 25px;"
+                >
+                    1
+                </div>
+                <img
+                    src="skin2.jpg"
+                    alt="토너 1위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin2"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 270px;"
+                >
+                    2
+                </div>
+                <img
+                    src="skin3.jpg"
+                    alt="토너 3위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin3"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 515px;"
+                >
+                    3
+                </div>
+                <img
+                    src="skin4.jpg"
+                    alt="토너 4위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin4"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 760px;"
+                >
+                    4
+                </div>
+                <img
+                    src="skin5.jpg"
+                    alt="토너 5위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin5"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1005px;"
+                >
+                    5
+                </div>
+                <img
+                    src="skin1.jpg"
+                    alt="토너 6위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin1"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1250px;"
+                >
+                    6
+                </div>
+                <img
+                    src="skin2.jpg"
+                    alt="토너 7위 제품"
+                    vspace="6"
+                    hspace="15.8"
+                    class="skin2"
+                    position="relative"
+                />
+                <div
+                    class="rank_number"
+                    style="text-align: center; margin-top: -40px; margin-left: 1495px;"
+                >
+                    7
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">가 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        22,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.8점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">나 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        25,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.5점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">다 파워토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        18,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.2점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">라 슈퍼토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        16,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.1점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">마 최고토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        23,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.7점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">바 어썸토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        25,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.6점
+                    </p>
+                </div>
+                <div id="product_info">
+                    <p id="name" class="inline-block">사 로제토너</p>
+                    <p
+                        style="
+                            font-family: Georgia;
+                            margin-left: 45px;
+                            margin-bottom: 0;
+                            margin-top: 0;
+                        "
+                    >
+                        22,900원 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
+                            src="star.png"
+                            alt="평점"
+                            width="18"
+                            height="18"
+                            class="skin2"
+                        />4.8점
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function enterSearch() {
+                if (event.keyCode == 13) {
+                    myFunction(); // 실행할 이벤트
+                }
+            }
+            function myFunction() {
+                var x = document.getElementById('text').value;
+                window.location.href = 'http://cybertramp.net/search/' + x;
+            }
+        </script>
+    </body>
+</html>
