@@ -17,3 +17,16 @@ def mens_rankingdetail2(request):
     return render(request,'mens_rankingdetail2.html')
 def search_result(request):
     return render(request,'search_result.html')
+    #게시판
+def board(request):
+    return render(request, 'board.html')
+def boardji(request):
+    return render(request, 'boardji.html')
+def board_view(request):
+    return render(request, 'board_view.html')
+def board_views(request):
+    return render(request, 'board_views.html')
+def board_write(request):
+    return render(request, 'board_write.html')
+def board_writes(request):
+    return render(request, 'board_writes.html')

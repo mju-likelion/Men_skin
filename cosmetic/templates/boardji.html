@@ -1,0 +1,302 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script> 
+    <title>게시판 목록</title>
+</head>
+    <div class="home">
+        <a href="home.html"></a><img src="{% static 'logo.png'%}" alt="로고" width="205" height="198"/></a>
+    </div>
+      <div class="sideBanner">
+        <br>
+        <div class = "side">
+            <a href="{%url 'board'%}">건성</a>
+        </div><br>
+        <div class = "side">
+            <a href="{%url 'boardji'%}">지성</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">복합성</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">헤어/뷰티</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">스타일</a>
+        </div>
+    </div>
+     <div class = "title">
+        <p><strong>지성</strong></p>
+    </div>
+        
+    <form name="searchForm" action="" method="get">
+        <div class="type">
+            <a href="#" class="bt">전체</a>
+            <p>&nbsp;</p>
+            <a href="#" class="bt">추천</a>
+            <p>&nbsp;</p>
+            <a href="#" class="bt">조회순</a>
+        </div>
+        <p>
+            <select name="searchType">
+                <option value="ALL">전체검색</option>
+                <option value="SUBJECT">제목</option>
+                <option value="WRITER">글쓴이</option>
+                <option value="CONTENTS">내용</option>
+            </select>
+            <input type="text" name="searchText" value="" />
+            <input type="submit" value="검색" />
+        </p>
+        </form>
+
+<div class="board_list_wrap">
+            <table class="board_list">
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>작성일</th>
+                        <th>조회</th>
+                        <th>추천</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tip">공지</td>
+                        <td class="tit">
+                            <a href="#">게시판 이용방법</a>
+                        </td>
+                        <td>김재정</td>
+                        <td>2020-11-20</td>
+                        <td>111</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>134</td>
+                        <td class="tit">
+                            <a href="{%url 'board_view'%}">지성 스킨 기초제품 추천해주세요</a>
+                        </td>
+                        <td>이성규</td>
+                        <td>2021-06-23</td>
+                        <td>222</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>135</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>136</td>
+                        <td class="tit">
+                            <a href="#">지성은멀까</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-25</td>
+                        <td>222</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>137</td>
+                        <td class="tit">
+                            <a href="#"> 공지사항</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>111</td>
+                        <td>181</td>
+                    </tr>
+                    <tr>
+                        <td>138</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>139</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-27</td>
+                        <td>33</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>135</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>136</td>
+                        <td class="tit">
+                            <a href="#">지성은멀까</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-25</td>
+                        <td>222</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>137</td>
+                        <td class="tit">
+                            <a href="#"> 공지사항</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>111</td>
+                        <td>181</td>
+                    </tr>
+                    <tr>
+                        <td>138</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>139</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-27</td>
+                        <td>33</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>135</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>136</td>
+                        <td class="tit">
+                            <a href="#">지성은멀까</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-25</td>
+                        <td>222</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>137</td>
+                        <td class="tit">
+                            <a href="#"> 공지사항</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>111</td>
+                        <td>181</td>
+                    </tr>
+                    <tr>
+                        <td>138</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>139</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-27</td>
+                        <td>33</td>
+                        <td>11</td>
+                    </tr> <tr>
+                        <td>135</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>136</td>
+                        <td class="tit">
+                            <a href="#">지성은멀까</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-25</td>
+                        <td>222</td>
+                        <td>101</td>
+                    </tr>
+                    <tr>
+                        <td>137</td>
+                        <td class="tit">
+                            <a href="#"> 공지사항</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>111</td>
+                        <td>181</td>
+                    </tr>
+                    <tr>
+                        <td>138</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-24</td>
+                        <td>333</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>139</td>
+                        <td class="tit">
+                            <a href="#">인생은언제나</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-06-27</td>
+                        <td>33</td>
+                        <td>11</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paging">
+                <a href="#" class="bt">첫 페이지</a>
+                <a href="#" class="bt">이전 페이지</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="bt">다음 페이지</a>
+                <a href="#" class="bt">마지막 페이지</a>
+                <a href="{%url 'board_write'%}" class="button">글쓰기</a>
+            </div>
+        </div>
+        <!-- <script src="js/main.js"></script> -->
+        <script src="{%static 'main.js'%}"></script>
+    </body>
+</html>

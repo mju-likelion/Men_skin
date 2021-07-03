@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>건성</title>
+    <link rel="stylesheet" href="{% static 'view.css'%}">
+</head>
+<body>
+    <div class="home">
+        <a href="home.html"></a><img src="{% static 'logo.png'%}" alt="로고" width="205" height="198"/></a>
+    </div>
+    <div class="sideBanner">
+        <br>
+        <div class = "side">
+            <a href="{%url 'board'%}">건성</a>
+        </div><br>
+        <div class = "side">
+            <a href="{%url 'boardji'%}">지성</a>
+        </div><br>
+        <div class = "side">
+            <a href="{%url 'boardji'%}">복합성</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">헤어/뷰티</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">스타일</a>
+        </div>
+    </div>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>건성</strong>
+        </div>
+        <div class="board_view_wrap">
+            <div class="board_view">
+                <div class="info">
+                    <dl>
+                        <dt>건성 화장품 "포맨 올인원 패키지" 추천합니다!</dt>
+                    </dl>
+                    <dl>
+                        <dt>2021.06.25&nbsp;20:35</dt>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>이성규</dt>
+                    </dl>
+                    <dl>
+                        <dt>&nbsp;조회: 10 추천: 100 </dt>
+                    </dl>
+                </div>
+                <div class="cont">
+                    포맨 올인원 패키지 3번째 구매해서 사용하고 있는데<br>
+                    효과도 좋고 구성이 알차서 좋은데 케이스 디자인도 깔끔해서 정말 좋아요!!<br>
+                    여러분도 한번 사용해보세요~~~!<br>
+                    <div class="bt_wrap">
+                        <a href="view.html" class="on">업</a>
+                        <a href="list.html">0</a>
+                        <a href="view.html" class="on">다운</a>
+                    </div>
+            </div>
+            <div class="div_comment">
+                <div id="comments">
+                    <div
+                        id="comment-head"
+                        class="comment-row"
+                    >
+                        <span id="comments-count" >0</span>개의 댓글
+                    </div>
+                    <div class="comments_bottom">
+                        <div class="comments_center">
+                            <textarea
+                                id="new-comment"
+                                name="new_comment"
+                                placeholder="댓글을 입력해주세요"
+                            ></textarea>
+                            <button
+                                type="submit"
+                                onclick="submitComment()"
+                            >
+                                입력
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="{%url 'board'%}" class="on">목록</a>
+                <a href="{%url 'board_writes'%}">수정</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/main.js"></script>
+    <script src="js/comments.js"></script> -->
+    <script src="{%static 'main.js'%}"></script>
+    <script src="{%static 'comment.js'%}"></script>
+</body>
+</html>

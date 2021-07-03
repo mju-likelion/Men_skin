@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+    <link rel="stylesheet" href="{% static 'write.css'%}">
+</head>
+<body>
+    <div class="home">
+        <a href="home.html"></a><img src="{% static 'logo.png'%}" alt="로고" width="205" height="198"/></a>
+    </div>
+    <div class="sideBanner">
+        <br>
+        <div class = "side">
+            <a href="{%url 'board'%}">건성</a>
+        </div><br>
+        <div class = "side">
+            <a href="{%url 'boardji'%}">지성</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">복합성</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">헤어/뷰티</a>
+        </div><br>
+        <div class = "side">
+            <a href="#">스타일</a>
+        </div>
+    </div>
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>건성</strong>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이:</dt>
+                        <dd><input type="text" placeholder="작성자 입력"></dd>
+                    </dl>
+                    <!-- <dl>
+                        <dt>비밀번호</dt>
+                        <dd> <input type="text" placeholder="비밀번호 입력"></dd>
+                    </dl> -->
+                </div>
+                <div class="title">
+                    <dl>
+                        <dt>제목 :</dt>
+                        <dd><input type="text" placeholder="제목 입력"></dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea placeholder="내용 입력"></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="{%url 'board'%}" class="on">등록</a>
+                <a href="{%url 'board'%}" class="on">취소</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="{%static 'main.js'%}"></script>
+</body>
+</html>
