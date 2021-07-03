@@ -7,7 +7,7 @@
     <title>게시판 목록</title>
 </head>
     <div class="home">
-        <a href="home.html"></a><img src="{% static 'logo.png'%}" alt="로고" width="205" height="198"/></a>
+        <a href="{%url 'home'%}"></a><img src="{% static 'logo.png'%}" alt="로고" width="205" height="198" onclick="location.href='{%url 'home'%}';"/></a>
     </div>
       <div class="sideBanner">
         <br>

@@ -132,7 +132,7 @@
         <div class="qucik_menu"> Quick Menu</div>
         <div class="qucik_menu_1" onclick="location.href={%url 'find_foundation'%};">Find your foundation</div>
         <div class="qucik_menu_2" onclick="location.href={%url 'mens_ranking'%};">cosmetics rank</div>
-        <div class="qucik_menu_3" onclick="location.href='게시판~.html';">notic board</div>
+        <div class="qucik_menu_3" onclick="location.href={%url 'board'%};">notic board</div>
     </div>
 
     <div>
@@ -149,20 +149,20 @@
 
     <div>
         <div id="target1"></div>
-        <img class="menu_img" src="{% static 'foundation_dark.jpg'%}"
+        <img class="menu_img" src="{% static 'foundation.jpg'%}"
             style="position: absolute; margin-right: 68px; margin-left: 154px; margin-top: 800px;  padding-bottom: 101px;"
-            alt="메인이미지" height="752" width="448" onmouseover="this.src={% static 'foundation.jpg'% };"
+            alt="메인이미지" height="752" width="448" onmouseover="{% static 'foundation.jpg' %};"
             onmouseout="this.src={% static 'foundation.jpg'%}" onclick="location.href={%url 'find_foundation'%};">
 
-        <img class="menu_img" src="{% static 'rank_dark.png'%}"
+        <img class="menu_img" src="{% static 'rank.png'%}"
             style="position: absolute; margin-right: 68px; margin-left: 716px; margin-top: 800px;  margin-bottom: 101px"
             alt="메인이미지" height="752" width="448" onmouseover="this.src={% static 'rank.png'%}" onmouseout="this.src={% static 'rank.png'%}"
             onclick="location.href={%url 'mens_ranking'%};">
 
-        <img class="menu_img" src="{% static 'board_dark.png'%}"
+        <img class="menu_img" src="{% static 'board.png'%}"
             style="position: absolute; margin-right: 154px; margin-left: 1278px; margin-top: 800px;  padding-bottom: 101px"
             alt="메인이미지" height="752" width="448" onmouseover="this.src={% static 'board.png'%}"
-            onmouseout="this.src={% static 'board_dark.png'%}" onclick="location.href='게시판~.html';">
+            onmouseout="this.src={% static 'board_dark.png'%}" onclick="location.href='board';">
 
     </div>
 
